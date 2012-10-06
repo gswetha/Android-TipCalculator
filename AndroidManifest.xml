@@ -13,7 +13,7 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name=".TipCalc"
-            android:label="@string/activity_tip_calc" >
+            android:label="@string/title_activity_tip_calc" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

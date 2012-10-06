@@ -53,7 +53,7 @@ public class TipCalc extends Activity {
         tip20EditText = (EditText) findViewById(R.id.tip20EditText);
         total20EditText = (EditText) findViewById(R.id.total20EditText);
         customTipTextView = (TextView) findViewById(R.id.customTipTextView);
-        tipCustomEditText = (EditText) findViewById(R.id.tipCustomTextView);
+        tipCustomEditText = (EditText) findViewById(R.id.tipCustomEditText);
         totalCustomEditText = (EditText) findViewById(R.id.totalCustomEditText);
         billEditText = (EditText) findViewById(R.id.billEditText);
         customSeekBar = (SeekBar) findViewById(R.id.customSeekBar);
