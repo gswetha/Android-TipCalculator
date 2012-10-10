@@ -8,6 +8,7 @@ import android.widget.*;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.text.Editable; 
 import android.text.TextWatcher;
+//import android.text.format.Formatter;
 
 public class TipCalc extends Activity {
 	private static final String BILL_TOTAL = "BILL_TOTAL"; //for when saving/restoring state
@@ -74,27 +75,27 @@ public class TipCalc extends Activity {
     	double tenPercentTotal = currentBillTotal + tenPercentTip;
     	
     	//display tip
-    	tip10EditText.setText(String.format("%0.2f", tenPercentTip));
+    	tip10EditText.setText(String.format("%.02f", tenPercentTip));
     	//display total amt
-    	total10EditText.setText(String.format("%0.2f", tenPercentTotal));
+    	total10EditText.setText(String.format("%.02f", tenPercentTotal));
     	
      	//calculate bill total with a 15% tip
     	double fifteenPercentTip = currentBillTotal * 0.15;
     	double fifteenPercentTotal = currentBillTotal + fifteenPercentTip;
     	
     	//display tip
-    	tip15EditText.setText(String.format("%0.2f", fifteenPercentTip));
+    	tip15EditText.setText(String.format("%.02f", fifteenPercentTip));
     	//display total amt
-    	total15EditText.setText(String.format("%0.2f", fifteenPercentTotal));
+    	total15EditText.setText(String.format("%.02f", fifteenPercentTotal));
     	
      	//calculate bill total with a 20% tip
     	double twentyPercentTip = currentBillTotal * 0.2;
     	double twentyPercentTotal = currentBillTotal + twentyPercentTip;
     	
     	//display tip
-    	tip20EditText.setText(String.format("%0.2f", twentyPercentTip));
+    	tip20EditText.setText(String.format("%.02f", twentyPercentTip));
     	//display total amt
-    	total20EditText.setText(String.format("%0.2f", twentyPercentTotal));
+    	total20EditText.setText(String.format("%.02f", twentyPercentTotal));
     } //end updateStandard
     
     //update customTip and customTotal EditTexts
@@ -107,8 +108,8 @@ public class TipCalc extends Activity {
     	//calculate total amt
     	double customTotalAmount = currentBillTotal + customTipAmount;
     	//display custom tip and corresponding total amt
-    	tipCustomEditText.setText(String.format("%0.f", customTipAmount));
-    	totalCustomEditText.setText(String.format("%0.2f", customTotalAmount));
+    	tipCustomEditText.setText(String.format("%.02f", customTipAmount));
+    	totalCustomEditText.setText(String.format("%.02f", customTotalAmount));
     }//end updateCustom
     
     @Override
